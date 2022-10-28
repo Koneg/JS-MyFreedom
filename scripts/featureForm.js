@@ -4,7 +4,7 @@ const title = document.querySelector('#title');
 const description = document.querySelector('#description');
 //Ищем form с id form
 const formFeature = document.querySelector('.feature-form');
-//Search card-list
+//Ищем card-list
 const cardList = document.querySelector('.card-list');
 
 //Объявляем обработчик события submit на form
@@ -39,4 +39,8 @@ formFeature.addEventListener('submit', function (event) {
   //Добавляем в div элемент с классом card-list
   //div элемент с классом card
   cardList.appendChild(card);
+
+  //Очищаем инпуты от введенных значений
+  title.value = '';
+  description.value = '';
 })

@@ -8,6 +8,10 @@
   padding: 32px;
   padding-top: 60px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section:nth-of-type(even) {
@@ -21,6 +25,7 @@
 .feature-form {
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 .input {
